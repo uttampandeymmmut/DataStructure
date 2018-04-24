@@ -1,4 +1,4 @@
-package linear.stak;
+package linear.stack;
 
 class StackGenric
 {

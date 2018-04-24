@@ -1,4 +1,4 @@
-package linear.stak;
+package linear.stack;
 
 class StackArray<T extends Object>
 {
@@ -31,6 +31,17 @@ class StackArray<T extends Object>
 			System.out.println("Deleted Element is "+ele);
 		}
 	}//pop
+	public void peek()
+	{
+		if(top==-1)
+			System.out.println("Stcak Empty \nCan't get any element ");
+		else
+		{
+			T ele=stackArr[top];
+			System.out.println("top Element is "+ele);
+		}
+	}//peek
+	
 	public void retrive()
 	{
 		for(int i=0;i<=top;i++)
@@ -48,6 +59,8 @@ class StackMainGen
 		stk.push("lala");
 		stk.push("pratap");
 		stk.push("kumar");
+		stk.peek();
+		
 		stk.retrive();
 		stk.pop();
 		stk.retrive();
